@@ -58,7 +58,7 @@ function Badge() {
 
 export function Hero() {
   const lineOne = ["Come", "in."];
-  const lineTwo = ["Make", "yourself"];
+  const lineTwo = ["Make", "yourself", "at"];
   return (
     <section id="top" className="grain relative overflow-x-clip bg-ivory">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 pb-24 pt-10 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-10 lg:pb-28 lg:pt-16">
@@ -68,16 +68,16 @@ export function Hero() {
             The Premier Social Club of Cheltenham · Est. 1874
           </p>
           <h1 className="mb-8 text-[2.75rem] leading-[1.12] sm:text-6xl lg:text-[5rem]">
-            <span className="block">
+            <span className="block" aria-hidden="true">
               {lineOne.map((w, i) => (
                 <span key={w} className="a-word mr-[0.25em]" style={d(300 + i * 120)}>{w}</span>
               ))}
             </span>
-            <span className="block">
+            <span className="block heading-accent" aria-hidden="true">
               {lineTwo.map((w, i) => (
                 <span key={w} className="a-word mr-[0.25em]" style={d(900 + i * 120)}>{w}</span>
               ))}
-              <span className="a-glow heading-accent" style={d(1150)}>at home.</span>
+              <span className="a-glow heading-accent" style={d(1260)}>home.</span>
             </span>
             <span className="sr-only">Come in. Make yourself at home.</span>
           </h1>

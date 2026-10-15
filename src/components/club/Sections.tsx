@@ -1,4 +1,4 @@
-import { CalendarDays, Coffee, DoorOpen, KeyRound, Moon, Music, Sun, Sunset, UtensilsCrossed, Building2 } from "lucide-react";
+import { CalendarDays, Coffee, DoorOpen, KeyRound, Moon, Sun, Sunset, UtensilsCrossed, Building2 } from "lucide-react";
 import dinner from "@/assets/dinner.jpg.asset.json";
 import gala from "@/assets/gala.jpg.asset.json";
 import lobster from "@/assets/lobster.jpg.asset.json";
@@ -184,4 +184,4 @@ export function Closing() {
   );
 }
 
-export { Music };
+
