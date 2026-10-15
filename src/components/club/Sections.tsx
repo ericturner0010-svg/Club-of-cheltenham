@@ -115,9 +115,9 @@ export function Calendar() {
               {EVENTS.map((e, i) => (
                 <Reveal as="li" key={e.title} delay={i * 80} className="border-b border-gold/70">
                   <a href={MAILTO} className="group flex min-h-12 items-center gap-5 py-5">
-                    <span className="flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl border border-gold bg-ivory leading-none">
+                    <span className="flex h-[4.5rem] w-[4.5rem] shrink-0 flex-col items-center justify-center rounded-2xl border border-gold bg-ivory leading-none">
                       <span className="font-serif text-2xl text-teal">{e.day}</span>
-                      <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold-deep">{e.mon} 2026</span>
+                      <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold-deep">{e.mon}</span><span className="text-xs text-gold-deep">2026</span>
                     </span>
                     <span className="flex-1 font-serif text-xl text-teal sm:text-2xl">{e.title}</span>
                     <span className="btn min-h-0 p-0 text-teal"><Arrow /></span>

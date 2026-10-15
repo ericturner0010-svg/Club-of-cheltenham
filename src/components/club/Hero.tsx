@@ -25,7 +25,7 @@ function Chip({ text, Icon, pos, delay, drift, mobile }: (typeof CHIPS)[number])
 
 function MobileChip({ text, Icon, side }: { text: string; Icon: typeof Coffee; side: "left" | "right" }) {
   return (
-    <div className={`absolute bottom-[-18px] z-20 sm:hidden ${side === "left" ? "left-0" : "right-0"}`} aria-hidden="true">
+    <div className={`absolute z-20 sm:hidden ${side === "left" ? "-left-1 bottom-[22%]" : "-right-1 bottom-[-16px]"}`} aria-hidden="true">
       <div className="a-chip" style={d(side === "left" ? 1500 : 1900)}>
         <div className="flex items-center gap-1.5 rounded-[18px] border border-gold bg-ivory px-3 py-1.5 text-sm text-charcoal shadow-[var(--shadow-soft)] whitespace-nowrap">
           <Icon className="h-4 w-4 text-gold-deep" strokeWidth={1.6} />
