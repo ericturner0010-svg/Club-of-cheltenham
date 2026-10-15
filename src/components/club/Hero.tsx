@@ -113,8 +113,8 @@ export function Hero() {
               </div>
             </div>
             {CHIPS.map((c) => <Chip key={c.text} {...c} />)}
-            <MobileChip text={CHIPS[0].text} Icon={Coffee} side="left" />
-            <MobileChip text={CHIPS[1].text} Icon={Users} side="right" />
+            <MobileChip text={"Coffee and the newspapers"} Icon={Coffee} side="left" />
+            <MobileChip text={"A table with friends"} Icon={Users} side="right" />
             <div className="hidden sm:block"><Badge /></div>
           </div>
         </div>
