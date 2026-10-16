@@ -5,9 +5,9 @@ import exterior from "@/assets/exterior.png";
 const d = (ms: number) => ({ animationDelay: `${ms}ms` });
 
 const CHIPS = [
-  { text: "Coffee and the newspapers", Icon: Coffee, pos: "left-[-8%] top-[30%] sm:left-[-14%]", delay: 2100, drift: "5s", mobile: true },
-  { text: "A table with friends", Icon: Users, pos: "right-[-6%] top-[16%] sm:right-[-12%]", delay: 2800, drift: "6.2s", mobile: true },
-  { text: "Jazz, opera and themed dinners", Icon: Music, pos: "left-[-10%] bottom-[18%] sm:left-[-18%]", delay: 3500, drift: "5.6s", mobile: false },
+  { text: "Coffee and the newspapers", Icon: Coffee, pos: "left-[-8%] top-[20%] sm:left-[-12%]", delay: 2100, drift: "5s", mobile: true },
+  { text: "A table with friends", Icon: Users, pos: "right-[-6%] top-[6%] sm:right-[-8%]", delay: 2800, drift: "6.2s", mobile: true },
+  { text: "Jazz, opera and themed dinners", Icon: Music, pos: "left-[4%] bottom-[-18px]", delay: 3500, drift: "5.6s", mobile: false },
 ];
 
 function Chip({ text, Icon, pos, delay, drift, mobile }: (typeof CHIPS)[number]) {
@@ -45,7 +45,7 @@ function Badge() {
             <defs>
               <path id="ring" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" />
             </defs>
-            <text fill="currentColor" fontSize="10.5" letterSpacing="2.2" fontFamily="Inter" fontWeight="600">
+            <text fill="currentColor" fontSize="8.8" letterSpacing="1.2" fontFamily="Inter" fontWeight="600" textLength="272" lengthAdjust="spacing">
               <textPath href="#ring">EST. 1874 · MONTPELLIER, CHELTENHAM ·</textPath>
             </text>
           </svg>
@@ -100,7 +100,7 @@ export function Hero() {
             <div className="a-breathe pointer-events-none absolute -inset-[22%] -z-0" style={{ background: "var(--glow-gold)" }} aria-hidden="true" />
             {/* drawn door frame, offset */}
             <svg className="absolute inset-0 z-0 h-full w-full translate-x-3 translate-y-3 overflow-visible text-gold sm:translate-x-5 sm:translate-y-5" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
-              <path d="M2 498 V200 A198 198 0 0 1 398 200 V498 Z" fill="none" stroke="currentColor" strokeWidth="1.6" pathLength={1} className="a-draw" style={d(500)} vectorEffect="non-scaling-stroke" />
+              <path d="M2 200 A198 198 0 0 1 398 200 V498 H2" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" pathLength={1} className="a-draw" style={d(500)} />
             </svg>
             <div className="a-door absolute inset-0 z-10" style={d(1100)}>
               <div className="arch h-full w-full overflow-hidden border border-gold shadow-[var(--shadow-soft)]">
