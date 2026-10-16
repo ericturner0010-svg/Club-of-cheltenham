@@ -72,12 +72,12 @@ export function DayAtClub() {
           <Reveal className="relative mx-auto w-full max-w-[520px] pb-44 sm:pb-52">
             <figure className="print -rotate-2" style={{ transform: "rotate(-2deg)" }}>
               <div className="warm-veil overflow-hidden rounded-[4px]">
-                <img src="/dinner.jpg" alt="A smiling couple in evening dress sharing dinner at a candlelit club table" loading="lazy" className="aspect-[3/2] w-full object-cover object-[50%_35%]" style={{ filter: "brightness(1.1) saturate(1.05) contrast(0.98)" }} />
+                <img src={dinner} alt="A smiling couple in evening dress sharing dinner at a candlelit club table" loading="lazy" className="aspect-[3/2] w-full object-cover object-[50%_35%]" style={{ filter: "brightness(1.1) saturate(1.05) contrast(0.98)" }} />
               </div>
             </figure>
             <figure className="print absolute bottom-0 right-0 w-[44%] max-w-[300px] sm:-right-10" style={{ transform: "rotate(2.5deg)" }}>
               <div className="warm-veil overflow-hidden rounded-[4px]">
-                <img src="/lobster.jpg" alt="A plated lobster and salmon starter served beneath tall candles at a club dinner" loading="lazy" className="aspect-[4/5] w-full object-cover object-[68%_50%]" style={{ filter: "brightness(1.12) saturate(1.05) contrast(0.98)" }} />
+                <img src={lobster} alt="A plated lobster and salmon starter served beneath tall candles at a club dinner" loading="lazy" className="aspect-[4/5] w-full object-cover object-[68%_50%]" style={{ filter: "brightness(1.12) saturate(1.05) contrast(0.98)" }} />
               </div>
             </figure>
           </Reveal>
@@ -106,7 +106,7 @@ export function Calendar() {
           <Reveal className="mx-auto w-full max-w-[520px]">
             <figure className="print" style={{ transform: "rotate(1.5deg)" }}>
               <div className="warm-veil overflow-hidden rounded-[4px]">
-                <img src="/gala.jpg" alt="Members laughing at a lively gala dinner as a guest in blue raises a bidding paddle" loading="lazy" className="aspect-[3/2] w-full object-cover object-[50%_30%]" style={{ filter: "brightness(1.1) saturate(1.05) contrast(0.98)" }} />
+                <img src={gala} alt="Members laughing at a lively gala dinner as a guest in blue raises a bidding paddle" loading="lazy" className="aspect-[3/2] w-full object-cover object-[50%_30%]" style={{ filter: "brightness(1.1) saturate(1.05) contrast(0.98)" }} />
               </div>
             </figure>
           </Reveal>
@@ -143,7 +143,7 @@ export function History() {
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 sm:px-8 md:grid-cols-2">
         <Reveal className="mx-auto w-full max-w-[460px]">
           <figure className="print" style={{ transform: "rotate(-1.5deg)", background: "var(--cream)" }}>
-            <img src="/history.jpg" alt="Black-and-white archive photograph of The New Club's Regency building in its early years" loading="lazy" className="aspect-[4/3] w-full rounded-[4px] border border-gold object-cover" style={{ filter: "sepia(0.35) contrast(0.95)" }} />
+            <img src={historyImg} alt="Black-and-white archive photograph of The New Club's Regency building in its early years" loading="lazy" className="aspect-[4/3] w-full rounded-[4px] border border-gold object-cover" style={{ filter: "sepia(0.35) contrast(0.95)" }} />
           </figure>
         </Reveal>
         <Reveal delay={100}>

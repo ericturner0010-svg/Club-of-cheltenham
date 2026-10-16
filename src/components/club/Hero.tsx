@@ -105,7 +105,7 @@ export function Hero() {
             <div className="a-door absolute inset-0 z-10" style={d(1100)}>
               <div className="arch h-full w-full overflow-hidden border border-gold shadow-[var(--shadow-soft)]">
                 <img
-                  src="/exterior.jpg"
+                  src={exterior}
                   alt="The New Club's cream Regency townhouse on a sunny day, its front door open and flower baskets spilling with pink and purple blooms"
                   className="a-zoom h-full w-full object-cover object-[50%_70%]"
                   style={{ ...d(2000), filter: "brightness(1.06) saturate(1.08)" }}

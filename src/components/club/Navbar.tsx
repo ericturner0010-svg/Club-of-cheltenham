@@ -30,7 +30,7 @@ export function Navbar() {
       <header className="sticky top-0 z-50 border-b border-gold/30 bg-ivory/85 backdrop-blur-md">
         <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-5 sm:px-8" aria-label="Main">
           <a href="#top" className="flex min-h-12 items-center rounded-xl bg-ivory px-1" aria-label="The New Club, home">
-            <img src="/logo.svg" alt="The New Club Cheltenham" className="h-8 w-auto sm:h-11" />
+            <img src={logo} alt="The New Club Cheltenham" className="h-8 w-auto sm:h-11" />
           </a>
           <ul className="hidden items-center gap-1 lg:flex">
             {LINKS.map((l) => (
@@ -62,7 +62,7 @@ export function Navbar() {
       {open && (
         <div className="fixed inset-0 z-[60] flex flex-col bg-ivory grain lg:hidden" role="dialog" aria-modal="true" aria-label="Menu">
           <div className="flex h-20 items-center justify-between px-5">
-            <img src="/logo.svg" alt="The New Club Cheltenham" className="h-8 w-auto" />
+            <img src={logo} alt="The New Club Cheltenham" className="h-8 w-auto" />
             <button type="button" onClick={() => setOpen(false)} className="inline-flex h-12 w-12 items-center justify-center text-teal" aria-label="Close menu">
               <X className="h-7 w-7" />
             </button>

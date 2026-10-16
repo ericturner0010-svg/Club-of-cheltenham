@@ -19,7 +19,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
           <div>
             <span className="inline-flex rounded-2xl bg-ivory px-4 py-3">
-              <img src="/logo.svg" alt="The New Club Cheltenham" className="h-9 w-auto" />
+              <img src={logo} alt="The New Club Cheltenham" className="h-9 w-auto" />
             </span>
             <p className="mt-5">Montpellier, Cheltenham</p>
             <a href={MAILTO} className="inline-flex min-h-12 items-center text-gold-light underline underline-offset-4">{EMAIL}</a>
