@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Arrow } from "./primitives";
+import logo from "@/assets/logo.svg";
 
 const LINKS = [
   { label: "Membership", href: "#doors" },

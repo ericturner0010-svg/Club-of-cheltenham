@@ -1,5 +1,6 @@
 import { ChevronDown, Coffee, Music, Users } from "lucide-react";
 import { Arrow, Fan } from "./primitives";
+import exterior from "@/assets/exterior.png";
 
 const d = (ms: number) => ({ animationDelay: `${ms}ms` });
 

@@ -1,5 +1,9 @@
 import { CalendarDays, Coffee, DoorOpen, KeyRound, Moon, Sun, Sunset, UtensilsCrossed, Building2 } from "lucide-react";
 import { Arrow, ArchDivider, Fan, MAILTO, Reveal, SectionHeading } from "./primitives";
+import dinner from "@/assets/dinner.jpg";
+import lobster from "@/assets/lobster.png";
+import gala from "@/assets/gala.jpg";
+import historyImg from "@/assets/history.jpg";
 
 /* ---------- 3. Doors ---------- */
 const DOORS = [

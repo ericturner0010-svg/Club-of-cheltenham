@@ -1,5 +1,6 @@
 import { Facebook, Instagram } from "lucide-react";
 import { EMAIL, MAILTO } from "./primitives";
+import logo from "@/assets/logo.svg";
 
 const QUICK = [
   { label: "Membership", href: "#doors" },
